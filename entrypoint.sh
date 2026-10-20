@@ -11,3 +11,4 @@ XRAY_PID=$!
 sleep 1
 kill -0 $XRAY_PID
 echo "xray is up (pid $XRAY_PID), starting front door..."
+exec node /app/server.js
